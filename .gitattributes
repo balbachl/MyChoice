@@ -3,7 +3,7 @@ linguist-language=C#
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
-
+* linguist-language=MVC
 ###############################################################################
 # Set default behavior for command prompt diff.
 #
