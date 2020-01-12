@@ -1,0 +1,160 @@
+﻿@model MyChoice.Models.AnimalModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Adoption Form</title>
+    @Styles.Render("~/Content/Animal.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <header>
+        <h2>Animal Adoption Form</h2>
+    </header>
+    <form name="adoption" method="post">
+        <p>
+            Select the level of endangerment from the list:
+            <select name="level" id="level">
+                <option value="critical">Critical</option>
+                <option value="endangered">Endangered</option>
+                <option value="near threatened">Near Threatened</option>
+                <option value="vulnerable">Vulnerable</option>
+                <option value="least threatened">Least Threatened</option>
+            </select>
+        <p>Animal Name: <input type="text" name="name" id="name" /></p>
+        <p>Donation:<input type="text" value="$100.00" name="donation" id="donation" />
+        <p>Your Name: <input type="text" name="name" id="name" /></p>
+        <p>Payment Method:
+            <select name="payment">
+                <option value="paypal">PayPal</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="check">Check</option>
+                <option value="moneyorder">Money Order</option>
+            </select>
+        <button type="submit">Submit</button>
+        </p>
+    </form>
+    <article>
+        <a href="https://www.worldwildlife.org/species/amur-leopard">
+            <div>
+                <img src="~/Content/leopard.jpg" alt="leopard" style="height:200px;">
+                <header>
+                    <h2>Amur Leopard</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/black-rhino">
+            <div>
+                <img src="~/Content/rhino.jpg" alt="rhino" style="height:200px;">
+                <header>
+                    <h2>Black Rhino</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/bornean-orangutan">
+            <div>
+                <img src="~/Content/bornean.jpg" alt="bornean" style="height:200px;">
+                <header>
+                    <h2>Bornean Orangutan</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/malayan-tiger">
+            <div>
+                <img src="~/Content/malaysian-tiger.jpg" alt="Malayan Tiger" style="height:200px;">
+                <header>
+                    <h2>Malayan Tiger</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/orangutan">
+            <div>
+                <img src="~/Content/orangutan.jpg" alt="Orangutan" style="height:200px;">
+                <header>
+                    <h2>Orangutan</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/sumatran-elephant">
+            <div>
+                <img src="~/Content/elephant.jpg" alt="Sumatran Elephant" style="height:200px;">
+                <header>
+                    <h2>Sumatran Elephant</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/sumatran-tiger">
+            <div>
+                <img src="~/Content/sumatran-tiger.jpg" alt="Sumatran Tiger" style="height:200px;">
+                <header>
+                    <h2>Sumatran Tiger</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/african-wild-dog">
+            <div>
+                <img src="~/Content/african-wild-dog.jpg" alt="African Wild Dog" style="height:200px;">
+                <header>
+                    <h2>African Wild Dog</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/yangtze-finless-porpoise">
+            <div>
+                <img src="~/Content/porpoise.jpg" alt="Finless Porpoise" style="height:200px;">
+                <header>
+                    <h2>Yangtze Finless Porpoise</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/sumatran-rhino#">
+            <div>
+                <img src="~/Content/rhino2.jpg" alt="Sumatran Rhino" style="height:200px;">
+                <header>
+                    <h2>Sumatran Rhino</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/black-footed-ferret">
+            <div>
+                <img src="~/Content/ferret.jpg" alt="Black Footed Ferret" style="height:200px;">
+                <header>
+                    <h2>Black Footed Ferret</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/blue-whale">
+            <div>
+                <img src="~/Content/blue-whale.jpg" alt="whale" style="height:200px;">
+                <header>
+                    <h2>Blue Whale</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/cross-river-gorilla">
+            <div>
+                <img src="~/Content/gorilla.jpg" alt="gorilla" style="height:200px;">
+                <header>
+                    <h2>Cross River Gorilla</h2>
+                </header>
+            </div>
+        </a>
+        <a href="https://www.worldwildlife.org/species/hawksbill-turtle">
+            <div>
+                <img src="~/Content/turtle.jpg" alt="Hawksbill Turtle" style="height:200px;">
+                <header>
+                    <h2>Hawksbill Turtle</h2>
+                </header>
+            </div>
+        </a>
+    </article>
+
+</body>
+</html>
+
